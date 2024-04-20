@@ -1,0 +1,40 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.progress-container {
+    width: 300px;
+    height: 10px;
+    background-color: #ddd;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #4CAF50;
+    width: 0;
+    border-radius: 5px;
+}

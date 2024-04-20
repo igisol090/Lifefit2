@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <a href="forum.html">forum.html</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header and Footer Example</title>
+    <link rel="stylesheet" href="../css/forum.css">
+</head>
+
+<body>
+
+    <header>
+        <button class="center-header">
+            <img src="../IMAGE/logo.png" class="logo"><span class="header-p"> LIFEFIT </span>
+        </button>
+    </header>
+
+
+    <!--------------HEADER ENDS HERE-------------->
+
+    <main>
+        <div class="content-section">
+            <div class="image-container">
+
+                <button id="profile-picture"></button>
+
+            </div>
+            <div class="text-box">
+
+                <input type="text" id="postInput" placeholder="What's on your mind?">
+            </div>
+        </div>
+    </main>
+
+    <div class="popup-container">
+        <div class="popup-content">
+            <div class="top-half"></div>
+
+
+
+            <div class="bottom-half">
+                <div class="content">
+                    <img src="../IMAGE/logo.png" alt="Image">
+
+                    <p class="text" style="font-size: 60px;">LIFEFIT</p>
+
+                </div>
+            </div>
+            <div class="popup-box">
+                <h2>Login</h2>
+                <button class="signInWithGoogle">Continue with Gmail</button>
+                <button class="continue-facebook">Continue with Facebook</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--------------FOOTER STARTS HERE-------------->
+
+
+    <footer>
+        <a href="workoutpage.html">
+            <img src="../IMAGE/workout.png" alt="Image 1" class="footer-images">
+            <p class="footer-p">Workouts</p>
+        </a>
+
+        <a href="#">
+            <img src="../IMAGE/tracker.png" alt="Image 2" class="footer-images">
+            <p class="footer-p">Tracker</p>
+        </a>
+
+        <a href="Forum2.html">
+            <img src="../IMAGE/social.png" alt="Image 3" class="footer-images">
+            <p class="footer-p">Social</p>
+        </a>
+
+
+        <a href="#">
+            <img src="../IMAGE/profile.png" alt="Image 4" class="footer-images">
+            <p class="footer-p">Profile</p>
+        </a>
+    </footer>
+
+
+    <!--------------FOOTER ENDS HERE-------------->
+
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-analytics.js";
+        import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyAKguqKMX5ZbH3kD2DmzcrjsJGNQNhvq48",
+            authDomain: "lifefit-e24e9.firebaseapp.com",
+            projectId: "lifefit-e24e9",
+            storageBucket: "lifefit-e24e9.appspot.com",
+            messagingSenderId: "875025829929",
+            appId: "1:875025829929:web:50bbbfc4279cc7f2374c38",
+            measurementId: "G-LH4VD4S347"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        const auth = getAuth();
+        const provider = new GoogleAuthProvider();
+
+        const signInWithGoogleButtons = document.querySelectorAll('.signInWithGoogle');
+
+        signInWithGoogleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                signInWithPopup(auth, provider)
+                    .then((result) => {
+                        const user = result.user;
+                        console.log(user);
+                        // Redirect to homepage after successful login
+                        window.location.href = "ASSESSMENT-STARTUP.html";
+                    })
+                    .catch((error) => {
+                        console.error(error.message);
+                    });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

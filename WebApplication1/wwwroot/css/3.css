@@ -1,0 +1,571 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.header-p {
+    margin-top: 5px;
+    font-family: Cambria;
+    font-size: 30px;
+    color: white;
+}
+
+.center-header {
+    margin-left: -35px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+/*~~~~~~~~~~~~~~Header ends here~~~~~~~~~~*/
+
+.plan {
+    position: relative;
+    font-family: Cambria;
+    margin-top: 120px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+}
+
+.check {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+}
+
+.condition {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.section1 {
+    position: relative;
+    background-color: #FB2A2A;
+    height: 310px;
+    color: white;
+    font-family: Cambria;
+    font-size: 18px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.section-header {
+    font-size: 20px;
+    text-align: center;
+}
+
+.icon1 {
+    position: absolute;
+    width: 45px;
+    top: 110px;
+    left: 25px;
+}
+
+.text1 {
+    position: absolute;
+    top: 95px;
+    left: 80px;
+}
+
+.text2 {
+    position: absolute;
+    top: 115px;
+    left: 80px;
+    font-size: 16px;
+}
+
+.icon2 {
+    position: absolute;
+    width: 48px;
+    top: 183px;
+    left: 25px;
+}
+
+.text3 {
+    position: absolute;
+    top: 170px;
+    left: 80px;
+}
+
+.text4 {
+    position: absolute;
+    top: 190px;
+    left: 80px;
+    font-size: 16px;
+}
+
+.icon3 {
+    position: absolute;
+    width: 53px;
+    top: 255px;
+    left: 22px;
+}
+
+.text5 {
+    position: absolute;
+    top: 245px;
+    left: 80px;
+}
+
+.text6 {
+    position: absolute;
+    top: 265px;
+    left: 80px;
+    font-size: 16px;
+}
+
+
+.section2 {
+    position: relative;
+    background-color: #FB2A2A;
+    height: 260px;
+    color: white;
+    font-family: Cambria;
+    font-size: 18px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 80px;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.section-header2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.check-icon1 {
+    position: absolute;
+    left: 20px;
+}
+
+.check-icon2 {
+    position: absolute;
+    left: 20px;
+}
+
+.check-icon3 {
+    position: absolute;
+    left: 20px;
+}
+
+.check-icon4 {
+    position: absolute;
+    left: 20px;
+}
+
+.check-icon5 {
+    position: absolute;
+    left: 20px;
+}
+
+.section2-text {
+    position: relative;
+    left: 30px;
+}
+
+.continue {
+    text-align: center;
+}
+
+.continue-btn {
+    background-color: #FB2A2A;
+    font-family: Cambria;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    width: 150px;
+    margin-bottom: 150px;
+}
+
+    .continue-btn:hover {
+        background-color: #FB2A2A;
+        font-family: Cambria;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        width: 150px;
+        opacity: .5;
+    }
+
+    .continue-btn:focus {
+        background-color: white;
+        font-family: Cambria;
+        color: #FB2A2A;
+        padding: 15px 30px;
+        border: solid 1px #FB2A2A;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        width: 150px;
+    }
+
+
+/*~~~~~~~~~~~~~~Footer starts here~~~~~~~~~~*/
+
+
+
+footer {
+    position: fixed;
+    justify-content: space-evenly;
+    bottom: -1px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    display: flex;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+    z-index: 1;
+}
+
+.footer-images {
+    width: 25px;
+    margin: 0 20px;
+}
+
+.footer-p {
+    font-family: Cambria;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        background: linear-gradient(to right, #F85B5B, #A56969);
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+
+    .header-p {
+        margin-top: 5px;
+        font-family: Cambria;
+        font-size: 30px;
+        color: white;
+    }
+
+    .center-header {
+        margin-left: -35px;
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+
+    /*~~~~~~~~~~~~~~Header ends here~~~~~~~~~~*/
+
+    .plan {
+        position: relative;
+        font-family: Cambria;
+        margin-top: 120px;
+        padding: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: none;
+    }
+
+    .check {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80px;
+    }
+
+    .condition {
+        margin-top: 10px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+
+    .section1 {
+        position: relative;
+        background-color: #FB2A2A;
+        height: 310px;
+        color: white;
+        font-family: Cambria;
+        font-size: 18px;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .section-header {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .icon1 {
+        position: absolute;
+        width: 45px;
+        top: 110px;
+        left: 25px;
+    }
+
+    .text1 {
+        position: absolute;
+        top: 95px;
+        left: 80px;
+    }
+
+    .text2 {
+        position: absolute;
+        top: 115px;
+        left: 80px;
+        font-size: 16px;
+    }
+
+    .icon2 {
+        position: absolute;
+        width: 48px;
+        top: 183px;
+        left: 25px;
+    }
+
+    .text3 {
+        position: absolute;
+        top: 170px;
+        left: 80px;
+    }
+
+    .text4 {
+        position: absolute;
+        top: 190px;
+        left: 80px;
+        font-size: 16px;
+    }
+
+    .icon3 {
+        position: absolute;
+        width: 53px;
+        top: 255px;
+        left: 22px;
+    }
+
+    .text5 {
+        position: absolute;
+        top: 245px;
+        left: 80px;
+    }
+
+    .text6 {
+        position: absolute;
+        top: 265px;
+        left: 80px;
+        font-size: 16px;
+    }
+
+
+    .section2 {
+        position: relative;
+        background-color: #FB2A2A;
+        height: 260px;
+        color: white;
+        font-family: Cambria;
+        font-size: 18px;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 60px;
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .section-header2 {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-bottom: 25px;
+    }
+
+    .check-icon1 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .check-icon2 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .check-icon3 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .check-icon4 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .check-icon5 {
+        position: absolute;
+        left: 20px;
+    }
+
+    .section2-text {
+        position: relative;
+        left: 30px;
+    }
+
+    .continue {
+        text-align: center;
+    }
+
+    .continue-btn {
+        background-color: #FB2A2A;
+        font-family: Cambria;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        width: 150px;
+        margin-bottom: 150px;
+    }
+
+    .continue-btn:hover {
+        background-color: #FB2A2A;
+        font-family: Cambria;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        width: 150px;
+        opacity: .5;
+    }
+
+    .continue-btn:focus {
+        background-color: white;
+        font-family: Cambria;
+        color: #FB2A2A;
+        padding: 15px 30px;
+        border: solid 1px #FB2A2A;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        width: 150px;
+    }
+
+
+    /*~~~~~~~~~~~~~~Footer starts here~~~~~~~~~~*/
+
+
+
+    footer {
+        position: fixed;
+        justify-content: space-evenly;
+        bottom: -1px;
+        width: 100%;
+        padding: 20px 0 0 0;
+        display: flex;
+        background: linear-gradient(to right, #F85B5B, #A56969);
+        z-index: 1;
+    }
+
+    .footer-images {
+        width: 25px;
+        margin: 0 20px;
+    }
+
+    .footer-p {
+        font-family: Cambria;
+        text-align: center;
+        margin-top: 5px;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

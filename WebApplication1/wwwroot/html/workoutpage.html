@@ -1,0 +1,317 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts</title>
+    <link rel="stylesheet" href="../css/workoutpage.css">
+</head>
+
+<body>
+
+    <header>
+        <button class="center-header">
+            <img src="../IMAGE/logo.png" class="logo"><span class="header-p"> LIFEFIT </span>
+        </button>
+    </header>
+
+
+    <!--------------HEADER ENDS HERE-------------->
+
+
+    <div class="parent-container">
+        <div class="fitness">
+            <p>Your fitness plan</p>
+        </div>
+    </div>
+
+
+    <p class="Beginner">Beginner</p>
+    <div class="slider-container">
+        <div class="slider">
+
+            <div class="slide active">
+                <a href="WORKOUTS-ABS-BEGINNER.html">
+                    <img src="../IMAGE/pic7.png" alt="Image 2">
+                </a>
+                <div class="pictext">Abs Beginner</div>
+            </div>
+            <div class="slide">
+                <a href="chest-beginner.html">
+                    <img src="../IMAGE/pic3.png" alt="Image 3">
+                </a>
+                <div class="pictext">Chest Beginner</div>
+            </div>
+            <div class="slide">
+                <img src="../IMAGE/pic4.png" alt="Image 4">
+                <div class="pictext">Legs Beginner</div>
+            </div>
+            <div class="slide">
+                <img src="../IMAGE/pic5.png" alt="Image 5">
+                <div class="pictext">Back Beginner</div>
+            </div>
+
+        </div>
+    </div>
+    <p class="Intermediate">Intermediate</p>
+    <div class="slider-container2">
+        <div class="slider2">
+
+            <div class="slide2 active">
+                <a href="chest-intemediate.html">
+                    <img src="../IMAGE/pic9.png" alt="Image 5">
+                </a>
+                <div class="pictext">Chest Intermediate</div>
+            </div>
+            <div class="slide2">
+                <a href="#">
+                    <img src="../IMAGE/pic10.png" alt="Image 6">
+                </a>
+                <div class="pictext">Arms Intermediate</div>
+            </div>
+            <div class="slide2">
+                <a href="LEGS-PRO.html">
+                    <img src="../IMAGE/pic11.png" alt="Image 7">
+                </a>
+                <div class="pictext">Legs Intermediate</div>
+            </div>
+            <div class="slide2">
+                <img src="../IMAGE/pic12.png" alt="Image 8">
+                <div class="pictext">Shoulder And Back Intermediate</div>
+            </div>
+
+        </div>
+    </div>
+    <p class="Expert">Expert</p>
+    <div class="slider-container3">
+        <div class="slider3">
+
+            <div class="slide3 active">
+                <img src="../IMAGE/expert1.png" alt="Image 5">
+                <div class="pictext">Abs Expert</div>
+            </div>
+            <div class="slide3">
+                <a href="chest-expert.html">
+                    <img src="../IMAGE/expert2.png" alt="Image 6">
+                </a>
+                <div class="pictext">Chest Expert</div>
+            </div>
+            <div class="slide3">
+                <img src="../IMAGE/expert3.png" alt="Image 7">
+                <div class="pictext">Arms Expert</div>
+            </div>
+            <div class="slide3">
+                <img src="../IMAGE/expert4.png" alt="Image 8">
+                <div class="pictext">Shoulder And Back Expert</div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--------------FOOTER STARTS HERE-------------->
+
+
+    <footer>
+        <a href="workoutpage.html">
+            <img src="../IMAGE/workout.png" alt="Image 1" class="footer-images">
+            <p class="footer-p">Workouts</p>
+        </a>
+
+        <a href="#">
+            <img src="../IMAGE/tracker.png" alt="Image 2" class="footer-images">
+            <p class="footer-p">Tracker</p>
+        </a>
+
+        <a href="Forum2.html">
+            <img src="../IMAGE/social.png" alt="Image 3" class="footer-images">
+            <p class="footer-p">Social</p>
+        </a>
+
+
+        <a href="#">
+            <img src="../IMAGE/profile.png" alt="Image 4" class="footer-images">
+            <p class="footer-p">Profile</p>
+        </a>
+    </footer>
+
+
+    <!--------------FOOTER ENDS HERE-------------->
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            let slideIndex = 0;
+            let slideIndex2 = 0;
+            let slideIndex3 = 0;
+            let isAnimating = false;
+
+            function moveSlide(n) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                let direction = n > 0 ? '-' : '';
+                let slideWidth = $('.slider .slide').outerWidth();
+
+                $('.slide.active').animate({
+                    'margin-left': `${direction}=${slideWidth}px`,
+                    opacity: 'toggle'
+                }, 400, function () {
+                    $(this).removeClass('active').css('margin-left', '');
+
+                    slideIndex += n;
+                    if (slideIndex >= $('.slide').length) {
+                        slideIndex = 0;
+                    } else if (slideIndex < 0) {
+                        slideIndex = $('.slide').length - 1;
+                    }
+
+                    $('.slide').eq(slideIndex)
+                        .css('margin-left', `${direction}=${-slideWidth}px`)
+                        .animate({
+                            'margin-left': '0',
+                            opacity: 'toggle'
+                        }, 400)
+                        .addClass('active');
+
+                    isAnimating = false;
+                });
+            }
+
+            function moveSlide2(n) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                let direction = n > 0 ? '-' : '';
+                let slideWidth = $('.slider2 .slide2').outerWidth();
+
+                $('.slide2.active').animate({
+                    'margin-left': `${direction}=${slideWidth}px`,
+                    opacity: 'toggle'
+                }, 400, function () {
+                    $(this).removeClass('active')
+                        .css('margin-left', '');
+
+                    slideIndex2 += n;
+                    if (slideIndex2 >= $('.slide2').length) {
+                        slideIndex2 = 0;
+                    } else if (slideIndex2 < 0) {
+                        slideIndex2 = $('.slide2').length - 1;
+                    }
+
+                    $('.slide2').eq(slideIndex2)
+                        .css('margin-left', `${direction}=${-slideWidth}px`)
+                        .animate({
+                            'margin-left': '0',
+                            opacity: 'toggle'
+                        }, 400)
+                        .addClass('active');
+
+                    isAnimating = false;
+                });
+            }
+
+            function moveSlide3(n) {
+                if (isAnimating) return;
+                isAnimating = true;
+
+                let direction = n > 0 ? '-' : '';
+                let slideWidth = $('.slider3 .slide3').outerWidth();
+
+                $('.slide3.active').animate({
+                    'margin-left': `${direction}=${slideWidth}px`,
+                    opacity: 'toggle'
+                }, 400, function () {
+                    $(this).removeClass('active')
+                        .css('margin-left', '');
+
+                    slideIndex3 += n;
+                    if (slideIndex3 >= $('.slide3').length) {
+                        slideIndex3 = 0;
+                    } else if (slideIndex3 < 0) {
+                        slideIndex3 = $('.slide3').length - 1;
+                    }
+
+                    $('.slide3').eq(slideIndex3)
+                        .css('margin-left', `${direction}=${-slideWidth}px`)
+                        .animate({
+                            'margin-left': '0',
+                            opacity: 'toggle'
+                        }, 400)
+                        .addClass('active');
+
+                    isAnimating = false;
+                });
+            }
+
+            $('.prev').click(function () {
+                moveSlide(-1);
+            });
+
+            $('.next').click(function () {
+                moveSlide(1);
+            });
+
+            $('.prev2').click(function () {
+                moveSlide2(-1);
+            });
+
+            $('.next2').click(function () {
+                moveSlide2(1);
+            });
+
+            $('.prev3').click(function () {
+                moveSlide3(-1);
+            });
+
+            $('.next3').click(function () {
+                moveSlide3(1);
+            });
+
+            $('.slider-container').on('touchstart', handleTouchStart);
+            $('.slider-container').on('touchmove', function (e) { handleTouchMove(e, moveSlide, 1) });
+            $('.slider-container2').on('touchstart', handleTouchStart);
+            $('.slider-container2').on('touchmove', function (e) { handleTouchMove(e, moveSlide2, 1) });
+            $('.slider-container3').on('touchstart', handleTouchStart);
+            $('.slider-container3').on('touchmove', function (e) { handleTouchMove(e, moveSlide3, 1) });
+
+            let startX;
+            let startY;
+            let distX;
+            let distY;
+            let threshold = 150;
+
+            function handleTouchStart(e) {
+                startX = e.touches[0].clientX;
+                startY = e.touches[0].clientY;
+            }
+
+            function handleTouchMove(e, moveSlideFunction, direction) {
+                if (!startX || !startY) {
+                    return;
+                }
+
+                distX = e.touches[0].clientX - startX;
+                distY = e.touches[0].clientY - startY;
+
+                if (Math.abs(distX) > Math.abs(distY)) {
+                    if (distX > 0) {
+                        moveSlideFunction(-1 * direction);
+                    } else {
+                        moveSlideFunction(1 * direction);
+                    }
+                }
+
+                startX = null;
+                startY = null;
+                distX = 0;
+                distY = 0;
+            }
+        });
+    </script>
+</body>
+
+</html>

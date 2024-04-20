@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.header-p {
+    margin-top: 5px;
+    font-family: Cambria;
+    font-size: 30px;
+    color: white;
+}
+
+.center-header {
+    margin-left: 5px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+
+main {
+    position: relative;
+    top: 250px;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    font-family: Cambria;
+}
+
+.main-p {
+    position: relative;
+    line-height: 60px;
+    margin: auto;
+    font-family: Cambria;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.racetrack-button {
+    background-color: #FB2A2A;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+    .racetrack-button:hover {
+        background-color: #45a049;
+    }
+
+footer {
+    position: fixed;
+    justify-content: space-evenly;
+    bottom: -1px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    display: flex;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+}
+
+.footer-images {
+    width: 25px;
+    margin: 0 20px;
+}
+
+.footer-p {
+    font-family: Cambria;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        background: linear-gradient(to right, #F85B5B, #A56969);
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+
+    .header-p {
+        margin-top: 5px;
+        font-family: Cambria;
+        font-size: 30px;
+        color: white;
+    }
+
+    .center-header {
+        margin-left: 5px;
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+
+
+    main {
+        position: relative;
+        top: 250px;
+        left: 0;
+        padding: 20px;
+        text-align: center;
+        font-family: Cambria;
+    }
+
+    .main-p {
+        position: relative;
+        line-height: 60px;
+        margin: auto;
+        font-family: Cambria;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .racetrack-button {
+        background-color: #FB2A2A;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 300px;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+        .racetrack-button:hover {
+            background-color: #45a049;
+        }
+
+    footer {
+        position: fixed;
+        justify-content: space-evenly;
+        bottom: -1px;
+        width: 100%;
+        padding: 20px 0 0 0;
+        display: flex;
+        background: linear-gradient(to right, #F85B5B, #A56969);
+    }
+
+    .footer-images {
+        width: 25px;
+        margin: 0 20px;
+    }
+
+    .footer-p {
+        font-family: Cambria;
+        text-align: center;
+        margin-top: 5px;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}

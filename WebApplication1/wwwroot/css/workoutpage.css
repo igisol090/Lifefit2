@@ -1,0 +1,680 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.header-p {
+    margin-top: 5px;
+    font-family: Cambria;
+    font-size: 30px;
+    color: white;
+}
+
+.center-header {
+    margin-left: -35px;
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+
+/*~~~~~~~~~~~~~~Header ends here~~~~~~~~~~*/
+
+
+.parent-container {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.fitness {
+    font-family: 'cambria', serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Beginner {
+    font-family: 'cambria', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Intermediate {
+    font-family: 'cambria', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Expert {
+    font-family: 'cambria', serif;
+    margin-top: -94px;
+    margin-bottom: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+}
+
+.slide img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.slide2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 1;
+    display: none;
+    transition: opacity 0.5s ease;
+    display: block;
+    transition: 0.5 ease;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.prev,
+.next {
+    font-size: 18px;
+}
+
+.prev {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.active {
+    display: block;
+}
+
+.slider-container2 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.slider {
+    display: flex;
+}
+
+.slide2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+
+.slider2 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide2 {
+    flex: 1;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+    .slide2.active {
+        display: block;
+        transition: 0.5 ease;
+    }
+
+
+.slider2 {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide2 {
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.active {
+    display: block;
+}
+
+.slider-container3 {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.slider {
+    display: flex;
+}
+
+.slide3 img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.slider3 {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide3 {
+    flex: 1;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+    .slide3.active {
+        display: block;
+        transition: 0.5 ease;
+    }
+
+.slider3 {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide3 {
+    display: none;
+    transition: transform 0.5s ease;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: rgb(228, 13, 13);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.active {
+    display: block;
+}
+
+.active3 {
+    display: block;
+}
+
+.pictext {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-family: Cambria;
+}
+
+.slide.active {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    margin-top: 5px;
+}
+
+
+/*~~~~~~~~~~~~~~Footer starts here~~~~~~~~~~*/
+
+
+footer {
+    position: fixed;
+    justify-content: space-evenly;
+    bottom: -1px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    display: flex;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+    z-index: 1;
+}
+
+.footer-images {
+    width: 25px;
+    margin: 0 20px;
+}
+
+.footer-p {
+    font-family: Cambria;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    header {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        background: linear-gradient(to right, #F85B5B, #A56969);
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        z-index: 2;
+    }
+
+
+    .header-p {
+        margin-top: 5px;
+        font-family: Cambria;
+        font-size: 30px;
+        color: white;
+    }
+
+    .center-header {
+        margin-left: -35px;
+        width: auto;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+
+    /*~~~~~~~~~~~~~~Header ends here~~~~~~~~~~*/
+
+
+    .parent-container {
+        text-align: center;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .fitness {
+        font-family: 'cambria', serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Beginner {
+        font-family: 'cambria', serif;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .Intermediate {
+        font-family: 'cambria', serif;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .Expert {
+        font-family: 'cambria', serif;
+        margin-top: -94px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 50px;
+    }
+
+    .slide2 img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 50px;
+    }
+
+
+    .slider {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        flex: 1;
+        display: none;
+        transition: opacity 0.5s ease;
+        display: block;
+        transition: 0.5 ease;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .prev,
+    .next {
+        font-size: 18px;
+    }
+
+    .prev {
+        left: 5%;
+    }
+
+    .next {
+        right: 5%;
+    }
+
+    .slide {
+        flex: 0 0 100%;
+    }
+
+    .slider {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide {
+        display: none;
+        transition: transform 0.5s ease;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .slider-container2 {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .slide2 img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 50px;
+    }
+
+
+    .slider2 {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide2 {
+        flex: 1;
+        display: none;
+        transition: opacity 0.5s ease;
+    }
+
+        .slide2.active {
+            display: block;
+            transition: 0.5 ease;
+        }
+
+
+    .slider2 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide2 {
+        display: none;
+        transition: transform 0.5s ease;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .slider-container3 {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+
+    .slider {
+        display: flex;
+    }
+
+    .slide3 img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 50px;
+    }
+
+    .slider3 {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide3 {
+        flex: 1;
+        display: none;
+        transition: opacity 0.5s ease;
+    }
+
+        .slide3.active {
+            display: block;
+            transition: 0.5 ease;
+        }
+
+    .slider3 {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide3 {
+        display: none;
+        transition: transform 0.5s ease;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        color: rgb(228, 13, 13);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .active3 {
+        display: block;
+    }
+
+    .pictext {
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        font-family: Cambria;
+    }
+}
+
+.slide.active {
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    color: black;
+    margin-top: 5px;
+}
+
+
+/*~~~~~~~~~~~~~~Footer starts here~~~~~~~~~~*/
+
+
+footer {
+    position: fixed;
+    justify-content: space-evenly;
+    bottom: -1px;
+    width: 100%;
+    padding: 20px 0 0 0;
+    display: flex;
+    background: linear-gradient(to right, #F85B5B, #A56969);
+    z-index: 1;
+}
+
+.footer-images {
+    width: 25px;
+    margin: 0 20px;
+}
+
+.footer-p {
+    font-family: Cambria;
+    text-align: center;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
